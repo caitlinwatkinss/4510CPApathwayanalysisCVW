@@ -1,4 +1,5 @@
 import json
+import os
 from pathlib import Path
 from typing import Dict, List, Optional
 
@@ -9,6 +10,7 @@ from analysis import utils
 
 BASE_DIR = Path(__file__).resolve().parents[1]
 DATA_PATH = BASE_DIR / "Alternative CPA Pathways Survey_December 31, 2025_09.45.csv"
+OUTPUT_DIR = Path(os.getenv("OUTPUT_DIR", str(BASE_DIR / "outputs")))
 OUTPUT_DIR = BASE_DIR / "outputs"
 TABLE_DIR = OUTPUT_DIR / "tables"
 FIG_DIR = OUTPUT_DIR / "figures"

@@ -5,6 +5,7 @@
 - Run the analysis pipeline to produce all tables, figures, and text outputs:
   - `pip install -r requirements.txt`
   - `python -m analysis.analysis_pipeline`
+- In GitHub Actions, outputs are stored as workflow artifacts (not committed to the repo).
 
 ## RQ1: Awareness vs CPA Intent
 - Table: `outputs/tables/rq1_awareness_by_intent.csv`
